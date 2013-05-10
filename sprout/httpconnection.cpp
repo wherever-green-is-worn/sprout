@@ -53,7 +53,7 @@
 /// be set to what we consider acceptable.  Covers lookup, possibly
 /// multiple connection attempts, request, and response.  In
 /// milliseconds.
-static const long TOTAL_TIMEOUT_MS = 500;
+static const long TOTAL_TIMEOUT_MS = 1000;
 
 /// Approximate length of time to wait before giving up on a
 /// connection attempt to a single address (in milliseconds).  cURL
@@ -67,7 +67,7 @@ static const long TOTAL_TIMEOUT_MS = 500;
 /// We set this quite short to ensure we quickly move on to another
 /// server. A connection should be very fast to establish (a few
 /// milliseconds) in the success case.
-static const long SINGLE_CONNECT_TIMEOUT_MS = 50;
+static const long SINGLE_CONNECT_TIMEOUT_MS = 500;
 
 /// Mean age of a connection before we recycle it. Ensures we respect
 /// DNS changes, and that we rebalance load when servers come back up
