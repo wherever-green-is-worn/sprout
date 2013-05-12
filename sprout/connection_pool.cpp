@@ -44,6 +44,8 @@ extern "C" {
 #include <cassert>
 #include <string>
 
+#include <unistd.h>
+
 #include "log.h"
 #include "pjutils.h"
 #include "connection_pool.h"
